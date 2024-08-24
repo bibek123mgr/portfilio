@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import Divider from './Divider';
 import { SiTaichigraphics } from "react-icons/si";
 import { CgIfDesign } from "react-icons/cg";
 import { MdWeb, MdEditSquare } from "react-icons/md";
+import Image from 'next/image';
 
 const About = () => {
     return (
@@ -10,7 +11,7 @@ const About = () => {
             <div className="mx-auto max-w-screen-xl">
                 <Divider title='About' />
                 <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                    I'm bibek, a passionate developer with a strong interest in JavaScript. I love exploring new technologies and solving problems, and I'm eager to learn and grow in the field of web development.
+                    I&apos;m Bibek, a passionate developer with a strong interest in JavaScript. I love exploring new technologies and solving problems, and I&apos;m eager to learn and grow in the field of web development.
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 items-center lg:text-left lg:flex-1">
@@ -31,7 +32,12 @@ const About = () => {
 
                     <div className="flex justify-center ">
                         <div className="relative w-48 h-48 lg:w-60 lg:h-60 rounded-full overflow-hidden bg-blue-100 mx-auto">
-                            <img src="/about.png" alt="Profile Picture" />
+                            <Image
+                                src="/about.png"
+                                alt="Profile Picture"
+                                layout="fill"
+                                objectFit="cover"
+                            />
                         </div>
                     </div>
 
@@ -67,7 +73,6 @@ const About = () => {
                 </div> */}
             </div>
         </section>
-
     );
 };
 

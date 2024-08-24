@@ -16,7 +16,7 @@ const Contact: React.FC<Props> = () => {
                     <div className="lg:col-span-2 lg:py-12">
                         <h1 className='text-5xl text-teal-600 font-bold'>Get in Touch</h1>
                         <p className="max-w-xl text-[16px] text-black">
-                            Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.
+                            Have some big idea or brand to develop and need help? Then reach out we&apos;sd love to hear about your project and provide help.
                         </p>
                     </div>
 
